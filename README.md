@@ -1,2 +1,5 @@
-# bioSite
-Violeta Figueroa: A Story of Dedication and Empowerment
+# CSD 340 Web Development with HTML and CSS 
+
+## Contributors
+- Instructor: Adam Bailey
+- Student: Usiel Figueroa
