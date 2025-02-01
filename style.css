@@ -1,3 +1,21 @@
+
+/*  Usiel Figueroa 
+Module 7.2 Assignment: bioSite: Development and GitHub Pages Deployment 
+CSD340-A311 Web Development with HTML and CSS 
+February 01, 2025 
+
+
+Sources:
+• W3C HTML Validator: https://validator.w3.org/  
+• W3C CSS Validator: http://jigsaw.w3.org/css-validator/  
+• HTML Tutorial: https://www.w3schools.com/html/ 
+• BRUIN Connect: https://bruinconnect.bellevue.edu/ 
+• GitHub: https://github.com/
+Validators:
+  W3C HTML Validator: https://validator.w3.org/  
+  W3C CSS Validator: http://jigsaw.w3.org/css-validator/   */
+
+
 body {
   font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
   margin: 0;
@@ -110,7 +128,7 @@ nav button:hover {
   color: #333;
 }
 
-/* Hobby Section Styling */
+
 .hobby-gallery {
   display: flex; 
   flex-direction: row; 
@@ -149,6 +167,37 @@ nav button:hover {
   color: #333;
 }
 
+
+footer {
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  background-color: white;
+  color: #2e1a48;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  flex-direction: row;  
+  gap: 10px; 
+}
+
+footer p {
+  margin: 0;  
+}
+
+footer .external-link a {
+  color: #8c7a3e; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .external-link a:hover {
+  text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .main-content {
@@ -169,5 +218,10 @@ nav button:hover {
 
   .hobby-gallery {
     flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;  
+    gap: 5px;
   }
 }
