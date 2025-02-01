@@ -59,6 +59,30 @@ nav button:hover {
   background-color: #513672;
 }
 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav button {
+  flex: 1; 
+  min-width: 80px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav button {
+    width: 100%;
+    max-width: 250px; 
+  }
+}
+
 .main-content {
   display: flex;
   gap: 20px;
@@ -87,10 +111,25 @@ nav button:hover {
   text-align: justify;
 }
 
-.accomplishments, .about, .hobbies {
+.about, .hobbies {
   width: 50%;
   border: 2px solid #8c7a3e;
-  padding: 15px;
+  padding: 30px;
+  box-sizing: border-box; 
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+}
+
+.accomplishments {
+  width: 50%; 
+  border: 2px solid #8c7a3e;
+  padding: 30px; 
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .accomplishments h3, 
@@ -104,16 +143,17 @@ nav button:hover {
   font-weight: bold;
 }
 
+
 .gallery {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  flex-direction: column; 
+  gap: 15px; 
 }
 
 .gallery-item {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  align-items: center; 
+  gap: 15px; 
 }
 
 .gallery-item img {
@@ -123,9 +163,12 @@ nav button:hover {
   object-fit: cover;
 }
 
+
 .gallery-item p {
+  flex: 1; 
+  text-align: center; 
   font-size: 16px;
-  color: #333;
+  color: #4b2c69;
 }
 
 
