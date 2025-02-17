@@ -231,13 +231,18 @@ footer p {
   margin: 0;  
 }
 
-footer .external-link a {
+ .external-link a {
   color: #8c7a3e; 
+  display: flex;
   text-decoration: none;
   font-weight: bold;
+  justify-content: center;  
+  align-items: center;
+  text-align: center;
+  flex-direction: row; 
 }
 
-footer .external-link a:hover {
+.external-link a:hover {
   text-decoration: underline;
 }
 
